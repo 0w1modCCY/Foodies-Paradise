@@ -1,0 +1,101 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Foodie's Paradise</title>
+        <meta charset="utf-8">
+        
+        <!-- Link para Bootstrap -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        
+        <!-- Link para fontawesome.com -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    </head>
+    <body class="bg-danger">
+        
+        <div class="container bg-white">
+        <div class="mb-2">
+            <div class="container p-0 bg-white text-dark position-relative">
+                <header>
+                    
+                    <!--Barra de navegacion-->
+                    <nav class="row navbar navbar-expand-md navbar-dark bg-dark">
+                       <a href="index.html" class="navbar-brand"> <i class="fas fa-utensils bg-danger p-2 rounded"></i> Foodie's Paradise</a>
+
+                        <ul class="navbar-nav ml-auto">
+                          <li class="nav-item">
+                            <a class="nav-link" href="carta.html"><i class="fas fa-bars"></i> Nuestra carta</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="ofertas.html"><i class="fas fa-euro-sign"></i> Ofertas</a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link" href="ubicacion.html"><i class="fas fa-map-signs"></i>¿Dónde estamos?</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="contacto.html"><i class="far fa-envelope"></i> Contacto</a>
+                          </li>
+                        </ul>
+                    </nav>
+                </header>
+                
+                <div class="container">
+                    <p class="pt-4 text-center text-danger font-weight-bold">¿Tienes alguna duda? Consúltanos</p>
+    
+                    <form>
+                        <div class="row">
+                            <div class="form-group col-12 col-md-4">
+                                <label for="nombre">Nombre:</label>
+                                <input type ="text" id ="nombre" name="nombre" required class="form-control"> 
+                            </div>
+                            
+                            <div class="form-group col-12 col-md-8">
+                                <label for="apellidos">Apellidos:</label>
+                                <input type ="text" id ="apellidos" name="apellidos" required class="form-control">
+                            </div>
+                        </div>
+                        
+                        <div class="row">
+                            <div class="form-group col-12 col-md-6">
+                                <label for="email">Email:</label>
+                                <input type ="text" id ="email" name="email" required class="form-control">
+                            </div>
+                            
+                            <div class="form-group col-12 col-md-6">
+                                <label for="telefono">Teléfono:</label>
+                                <input type ="text" id ="telefono" name="telefono" required class="form-control">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>Motivo de la consulta:</label>
+                            <select id = "motivo" name ="motivo" class="form-control custom-select">
+                                <option>Realizar una reserva</option>                                     
+                                <option>Anular una reserva</option>                                       
+                                <option>Petición menú especial</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="consulta">Consulta:</label>
+                            <textarea id="consulta" class="form-control" name ="consulta" rows="5" ></textarea>
+                        </div>
+                        
+                        <div class="form-group text-center">
+                            <input type="submit" class="btn btn-danger">
+                        </div>
+                    </form>
+                </div>
+                
+                <footer class="row bg-dark text-light text-center pb-4 pt-4">
+                    <div class="col-sm-12 col-md-6 pb-3">    
+                        <em>Si te apasiona la comida,<br><strong href="./ubicacion.html">ven a visitarnos.</strong></em>
+                    </div>
+                    <div class="col-sm-12 col-md-6 pb-3">
+                        <em>¿Quieres organizar un evento para grupos?<br><strong href="./contacto.html">Contacta con nosotros.</strong></em>
+                    </div>
+                </footer>
+            </div>
+        </div>
+        </div>
+    </body>
+</html>
